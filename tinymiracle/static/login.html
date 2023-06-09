@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="farmerform.css" />
+  </head>
+  <body>
+    <h2>
+      <nav class="navbar">
+        <h3 id="projectname">Tiny Miracles Foundation</h3>
+      </nav>
+    </h2>
+    <br /><br />
+    <div class="form-container">
+      <div class="row-container">
+        <div class="col-md-5 mx-auto">
+          <br />
+          <form id="login">
+            <h1 id="log">Log In</h1>
+            <input
+              type="text"
+              autocomplete="off"
+              id="username"
+              placeholder="Username"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              autocomplete="off"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <br />
+            <input
+              type="submit"
+              id="btn"
+              class="loginbtn"
+              value="Submit Form"
+            />
+            <br />
+            <!-- <p id="bot"> -->
+            <a href="change-password.html">Forgot Password</a>
+            <!-- </p> -->
+            <br />
+            <br />
+            <p id="re">
+              Haven't Registered? <br /><a href="index.html">Register Here</a>
+            </p>
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById("login");
+      form.addEventListener("submit", login);
+
+      async function login(event) {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const mobile = document.getElementById("MobileNumber").value;
+
+        const result = await fetch("/api/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username,
+            password,
+            mobile,
+          }),
+        }).then((res) => res.json());
+
+        if (result.status === "ok") {
+          // everythign went fine
+          console.log("Got the token: ", result.data);
+          localStorage.setItem("token", result.data);
+          alert("Success");
+          location.replace("http://localhost:5000/");
+        } else {
+          alert(result.error);
+        }
+      }
+    </script>
+  </body>
+</html>

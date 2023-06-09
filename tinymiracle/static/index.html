@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register!</title>
+    <link rel="stylesheet" href="register.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./statelist.js"></script>
+  </head>
+  <style>
+    .container {
+      text-align: center;
+      padding-right: 500px;
+    }
+  </style>
+
+  <body>
+    <h2>
+      <nav class="navbar">
+        <ul>
+          <li id="projectname">
+            AgroLove : A help for Agriculture Enthusiasts
+          </li>
+        </ul>
+      </nav>
+    </h2>
+    <br /><br />
+    <div class="form-container">
+      <div class="row-form">
+        <div class="col-md-5 mx-auto">
+          <br />
+          <!-- <div class="box-container"></div> -->
+          <form id="reg-form">
+            <h1 id="reg">Register</h1>
+            <input
+              type="text"
+              autocomplete="off"
+              id="username"
+              placeholder="Username"
+            />
+            <br />
+            <input
+              type="password"
+              autocomplete="off"
+              id="password"
+              placeholder="Password"
+            />
+            <br />
+            <input
+              type="text"
+              autocomplete="off"
+              id="MobileNumber"
+              placeholder="MobileNumber"
+            />
+            <br />
+
+            <div>
+              <form>
+                <div class="input-group">
+                  <!-- <span class="input-group-text"><strong>State</strong></span> -->
+                  <br>
+                  <select class="form-control" id="inputState">
+                    <option value="SelectState">-- select state --</option>
+                    <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                    <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                    <option value="ASSAM">ASSAM</option>
+                    <option value="BIHAR">BIHAR</option>
+                    <option value="CHATISGARH">CHATISGARH</option>
+                    <option value="GOA">GOA</option>
+                    <option value="GUJARAT">GUJARAT</option>
+                    <option value="HARYANA">HARYANA</option>
+                    <option value="HIMACHAL">HIMACHAL</option>
+                    <option value="JAMMU AND KASHMIR">JAMMU AND KASHMIR</option>
+                    <option value="JHARKHAND">JHARKHAND</option>
+                    <option value="KARNATAKA">KARNATAKA</option>
+                    <option value="KERALA">KERALA</option>
+                    <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                    <option value="MAHARASHTRA">MAHARASHTRA</option>
+                    <option value="MANIPUR">MANIPUR</option>
+                    <option value="MEGHALAYA">MEGHALAYA</option>
+                    <option value="MIZORAM">MIZORAM</option>
+                    <option value="NAGALAND">NAGALAND</option>
+                    <option value="ORISSA">ORISSA</option>
+                    <option value="PUNJAB">PUNJAB</option>
+                    <option value="RAJASTHAN">RAJASTHAN</option>
+                    <option value="SIKKIM">SIKKIM</option>
+                    <option value="TAMIL NADU">TAMIL NADU</option>
+                    <!-- <option value="TELANGANA">Telangana</option> -->
+                    <option value="TRIPURA">TRIPURA</option>
+                    <option value="UTTARANCHAL">UTTARANCHAL</option>
+                    <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                    <option value="WEST BENGAL">WEST BENGAL</option>
+                    <option disabled style="background-color: #aaa; color: #fff">
+                      UNION Territories
+                    </option>
+                    <option value="ANDAMAN And NICOBAR ISLANDS">
+                      ANDAMAN AND NICOBAR ISLANDS
+                    </option>
+                    <option value="CHANDIGARH">CHANDIGARH</option>
+                    <option value="DADAR NAGAR HAVELI">DADAR NAGAR HAVELI</option>
+                    <option value="DAMAN AND DUI">DAMAN AND DUI</option>
+                    <option value="DELHI">DELHI</option>
+                    <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+                    <option value="PONDICHERRY">PONDICHERRY</option>
+                  </select>
+                </div>
+                <br />
+                <!-- <div class="input-group mb-3">
+                  <span class="input-group-text"><strong>District</strong></span>
+                  <select class="form-control" id="inputDistrict">
+                    <option value="">-- Select One --</option>
+                  </select>
+                </div>
+              </form> -->
+  
+            </div>
+            <input
+              type="submit"
+              id="btn"
+              class="registerbtn"
+              value="Submit Form"
+            />
+            <p id="bot">
+              Already Registered? <br /><a href="login.html">Login Here</a>
+            </p>
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script>
+      const form = document.getElementById("reg-form");
+      form.addEventListener("submit", registerUser);
+
+      async function registerUser(event) {
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const mobile = document.getElementById("MobileNumber").value;
+
+        const result = await fetch("/api/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username,
+            password,
+            mobile,
+          }),
+        }).then((res) => res.json());
+
+        if (result.status === "ok") {
+          // everythign went fine
+          alert("Success");
+        } else {
+          alert(result.error);
+        }
+      }
+    </script>
+  </body>
+</html>
