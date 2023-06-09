@@ -216,15 +216,17 @@ li {
 .sec-title {
   margin-bottom: 50px;
   margin: 0 0 0 20px;
+  
 }
 .sec-title h2 {
   margin-top: -9px;
+  
 }
 .sec-title h2:after {
   content: '';
   width: 55px;
   height: 3px;
-  background:#4ed500 ;
+  background:#8000d5 ;
   display: block;
   margin-top: 13px;
 }
@@ -247,7 +249,7 @@ li {
 .list-item li:before {
   content: '\f0a9';
   font-family: 'FontAwesome';
-  color: #23f508;
+  color: #8000d5;
   margin-right: 10px;
 }
 
@@ -1856,7 +1858,7 @@ display: inline-block;
 }
 
 /* ==============================
-  22. Footer styles
+22. Footer styles
 ============================== */
 
 .footer-widget .title {
@@ -1871,13 +1873,15 @@ display: inline-block;
   margin-top: 13px;
 }
 .footer-widget .title h3 span {
-  display: block;
+  /* display: block; */
   font-size: 20px;
   font-weight: 600;
+  color: #05f7c2;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
+  
 }
 .footer-widget .about-widget p {
   color: #62666A;
@@ -2091,7 +2095,7 @@ display: inline-block;
   margin-bottom: 25px;
 }
 .about-info-box .bulleted-list li {
-  color: #32CD32;
+  color: #white;
 }
 .about-info-box .bulleted-list li .fa {
   line-height: 40px;

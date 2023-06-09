@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <style type="text/css">
-    .header {
-      overflow: hidden;
-      background-color: black;
-      padding: 10px 30px;
-    }
 
-    .header a {
-      float: left;
-      color: white;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px;
-      line-height: 25px;
-      border-radius: 4px;
-    }
+		.header {
+		  overflow: hidden;
+		  background-color: #10151b;
+		  padding: 10px 30px ;
+		}
+		
+		.header a {
+		  float: left;
+		  color: white;
+		  text-align: center;
+		  padding: 12px;
+		  text-decoration: none;
+		  font-size: 18px; 
+		  line-height: 25px;
+		  border-radius: 4px;
+		}
+		
+		.header a.logo {
+		  font-size: 25px;
+		  font-weight: bold;
+		}
+		.header a.logo:hover {
+		  background-color: black;
+		}
 
-    .header a.logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-    .header a.logo:hover {
-      background-color: black;
-    }
+		.header a:hover {
+		  background-color: rgb(86, 246, 11);
+		  color: black;
+		}
+		
+		.header a.active {
+		  background-color: dodgerblue;
+		  color: white;
+		}
+		
+		.header-right {
+		  float: right;
+		}
+		.subnav {
+		  float: left;
+		  overflow: hidden;
+		  padding: 12px;
+		  text-decoration: none;
+		  font-size: 18px; 
+		  line-height: 25px;
+		  border-radius: 4px;
+		}
+		
+		.subnav .subnavbtn {
+		  border: none;
+		  outline: none;
+		  color: white;
+		
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
+		
+		
+		.subnav-content {
+		  display: none;
+		  position: absolute;
+		
+		  background-color: black;
+		  z-index: 1;
+		}
+		
+		.subnav-content a {
+		  float: left;
+		  color: white;
+		  text-decoration: none;
+		}
+		
+		.subnav-content a:hover {
+		  background-color: rgb(6, 240, 26);
+		  color: black;
+		}
+		
+		.subnav:hover .subnav-content {
+		  display: block;
+		}
 
-    .header a:hover {
-      background-color: rgb(86, 246, 11);
-      color: black;
+    .boxx{
+      margin-left: 60px;
+      margin-right: 60px;
     }
-
-    .header a.active {
-      background-color: dodgerblue;
-      color: white;
-    }
-
-    .header-right {
-      float: right;
-    }
-    .subnav {
-      float: left;
-      overflow: hidden;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px;
-      line-height: 25px;
-      border-radius: 4px;
-    }
-
-    .subnav .subnavbtn {
-      border: none;
-      outline: none;
-      color: white;
-
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-
-    .subnav-content {
-      display: none;
-      position: absolute;
-
-      background-color: black;
-      z-index: 1;
-    }
-
-    .subnav-content a {
-      float: left;
-      color: white;
-      text-decoration: none;
-    }
-
-    .subnav-content a:hover {
-      background-color: rgb(6, 240, 26);
-      color: black;
-    }
-
-    .subnav:hover .subnav-content {
-      display: block;
-    }
-  </style>
+</style>
 
   <head>
     <meta name="viewport" content="width=device-width , initial-scale=1.0" />
@@ -219,6 +226,10 @@
       .subnav:hover .subnav-content {
         display: block;
       }
+
+      .bulleted-list{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
     </style>
 
     <!-- Start mainmenu -->
@@ -231,26 +242,10 @@
         <div class="header-right">
           <!-- <a href="http://localhost:8000/">Crop Predictor</a> -->
           <!-- <div class="subnav"></div> -->
-          <a href="govts.html">Our Events</a>
+          <a href="index.html">Home</a>
+          <a href="events.html">Our Events</a>
           <a href="seed.html">Information</a>
-          <a href="Feedback.html">Contact Us</a>
-          <!--<div class="subnav">
-           <div class="subnav">
-             <button class="subnavbtn">Crop<i class="#"></i></button> -->
-          <!-- <div class="subnav-content">
-              <li><a href="seed.html">Info on Seeds</a></li>
-              <li><a href="seed price.html">Current Seeds Price</a></li>
-              <li><a href="Fertilizer.html">Fertilizer</a></li>
-            </div>
-          </div> -->
-
-          <!--<div class="subnav">
-             <button class="subnavbtn">Tech Knowledge<i class="#"></i></button>
-            <div class="subnav-content">
-              <li><a href="solarpanel.html">Solar Panel</a></li>
-              <li><a href="tech.html">Modern Day Tech</a></li>
-            </div> 
-          </div>-->
+          <!-- <a href="Feedback.html">Contact Us</a> -->
         </div>
       </div>
     </header>
@@ -341,109 +336,7 @@
               data-start="1500"
             ></div>
           </li>
-          <li data-transition="parallaxvertical" data-ease="SlowMo.ease">
-            <img src="images/slider/bg2.png" alt="crop" />
-            <div
-              class="tp-caption sfb tp-resizeme caption-h1"
-              data-x="left"
-              data-hoffset="0"
-              data-y="top"
-              data-voffset="248"
-              data-whitespace="nowrap"
-              data-transform_idle="o:1;"
-              data-transform_in="o:0"
-              data-transform_out="o:0"
-              data-start="500"
-            >
-              TINY MIRACLES FOUNDATION<br />VISION
-            </div>
-            <div
-              class="tp-caption sfb tp-resizeme caption-p"
-              data-x="left"
-              data-hoffset="0"
-              data-y="top"
-              data-voffset="375"
-              data-whitespace="nowrap"
-              data-transform_idle="o:1;"
-              data-transform_in="o:0"
-              data-transform_out="o:0"
-              data-start="1000"
-            >
-              Is to work for farmers problem and introduce them to various
-              policies and Technology related to farming.
-            </div>
-            <div
-              class="tp-caption sfl tp-resizeme"
-              data-x="left"
-              data-hoffset="0"
-              data-y="top"
-              data-voffset="500"
-              data-whitespace="nowrap"
-              data-transform_idle="o:1;"
-              data-transform_in="o:0"
-              data-transform_out="o:0"
-              data-start="1500"
-            >
-              <!--<a href="about.html" class="thm-btn">About Us <i class="fa fa-arrow-right"></i></a>-->
-            </div>
-          </li>
 
-          <li data-transition="parallaxvertical" data-ease="SlowMo.ease">
-            <img src="images/slider/13.jpg" alt="farms" />
-            <div
-              class="tp-caption sfb tp-resizeme caption-h1"
-              data-x="left"
-              data-hoffset="0"
-              data-y="bottom"
-              data-voffset="0"
-              data-whitespace="nowrap"
-              data-transform_idle="o:1;"
-              data-transform_in="o:0"
-              data-transform_out="o:0"
-              data-start="500"
-            ></div>
-            <div
-              class="tp-caption sfb tp-resizeme caption-h1"
-              data-x="right"
-              data-hoffset="0"
-              data-y="bottom"
-              data-voffset="0"
-              data-whitespace="nowrap"
-              data-transform_idle="o:1;"
-              data-transform_in="o:0"
-              data-transform_out="o:0"
-              data-start="1700"
-            ></div>
-            <div
-              class="tp-caption sfb tp-resizeme caption-p"
-              data-x="right"
-              data-hoffset="50"
-              data-y="top"
-              data-voffset="275"
-              data-whitespace="nowrap"
-              data-transform_idle="o:1;"
-              data-transform_in="o:0"
-              data-transform_out="o:0"
-              data-start="1100"
-            >
-              "Farming looks mighty easy when your plow is a pencil,<br />
-              and you're a thousand miles from the corn field." <br />
-              - President Dwight D. Eisenhower
-            </div>
-            <div
-              class="tp-caption sfl tp-resizeme"
-              data-x="right"
-              data-hoffset="460"
-              data-y="top"
-              data-voffset="360"
-              data-whitespace="nowrap"
-              data-transform_idle="o:1;"
-              data-transform_in="o:0"
-              data-transform_out="o:0"
-              data-start="1500"
-            >
-              <!--<a href="https://www.vitbhopal.ac.in/" class="thm-btn inverse">VIT Bhopal <i class="fa fa-arrow-right"></i></a>-->
-            </div>
           </li>
         </ul>
       </div>
@@ -454,42 +347,21 @@
         <div class="row">
           <div class="col-lg-8 col-md-8">
             <div class="sec-title">
-              <h2><span>What is Agrolove</span></h2>
-              <ul class="bulleted-list">
-                <li>
-                  <i class="fa fa-arrow-circle-right"></i> Agrolove (All You
-                  Need for Agronomy) is a website particularly for the Indian
-                  Farmers to provide all information in one portal.
-                </li>
-              </ul>
-              <h2><span>What does Agrolove means?</span></h2>
-              <ul class="bulleted-list">
-                <li>
-                  <i class="fa fa-arrow-circle-right"></i> Agrolove - All You
-                  Need for Agronomy
-                </li>
-                <li>
-                  <i class="fa fa-arrow-circle-right"></i> Agrolove:- Same as a
-                  mirror our website also reflects out all the info that's out
-                  there without misleading.
-                </li>
-              </ul>
-              <h2><span>Reasons to Use Agrolove</span></h2>
-              <ul class="bulleted-list">
-                <li>
-                  <i class="fa fa-arrow-circle-right"></i> A farmer will be able
-                  to get all relevant information on specific subjects around
-                  his state.
-                </li>
-                <li>
-                  <i class="fa fa-arrow-circle-right"></i> One Stop Solution for
-                  Farmers with most of the required Info available at one place.
-                </li>
-                <li>
-                  <i class="fa fa-arrow-circle-right"></i> Consist of features
-                  like weather report, government schemes, seed price etc.
-                </li>
-              </ul>
+              <br />
+              <h2 ;><span style="color: #05f7c2" ;>About Us</span></h2>
+              <p class="bulleted-list">
+                  <strong>
+                  The Tiny Miracles Foundation started with picking up one child from
+            the street to get her educated. However, soon they realized the
+            parents did not understand why their child should go to school in
+            the first place. Seeing this happen often and listening to their
+            needs led to a realization that in order to break the cycle of
+            poverty, a mindset shift needs to take place. People need hope and
+            tools for a better future. Through trial and error, the nonprofit
+            has designed a holistic approach that focuses on all areas of life,
+            and not just educating children.</strong>
+          </p>
+              
             </div>
           </div>
         </div>
@@ -499,11 +371,11 @@
     <section class="welcome-services home-one">
       <div class="thm-container">
         <div class="sec-title">
-          <h2><span>Features</span></h2>
-          <p>All the features that are provided by this website.</p>
+          <h2><span style="color: #05f7c2" ;>EVENTS WE ORGANIZE</span></h2>
+          <!-- <p>All the features that are provided by this website.</p> -->
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <div class="welcome-single-services">
               <div class="img-box">
                 <img src="images/welcome-services/18.jpg" alt="weather" />
@@ -518,8 +390,24 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-6">
+            <div class="welcome-single-services">
+              <div class="img-box">
+                <img src="images/welcome-services/19.png" alt="Govt Schemes" />
+              </div>
+              <div class="text-box">
+                <div class="content">
+                  <h3>Goverment Schemes Updates</h3>
+                  <p>
+                    Latest Government Schemes for maximizing the benefits and
+                    minimizing the loss of all the peoples.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  class="col-md-6" style="text-align: center;">
             <div class="welcome-single-services">
               <div class="img-box">
                 <img src="images/welcome-services/2.jpg" alt="seed" />
@@ -530,22 +418,6 @@
                   <p>
                     Realtime Seed Price along with all the Knowledge you need
                     about different types of seeds
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="welcome-single-services">
-              <div class="img-box">
-                <img src="images/welcome-services/19.png" alt="Govt Schemes" />
-              </div>
-              <div class="text-box">
-                <div class="content">
-                  <h3>Goverment Schemes</h3>
-                  <p>
-                    Latest Government Schemes for maximizing the benefits and
-                    minimizing the loss.
                   </p>
                 </div>
               </div>
@@ -632,21 +504,20 @@
             <div class="about-widget">
               <a href="index.html"
                 ><img
-                  style="height: 150px"
+                  style="height: 100px"
                   src="images/footer-logo.png"
                   alt="logo"
               /></a>
-              <p>All You Need for Agronomy</p>
+              <p style="margin: left 10px";>EMPOWERING PEOPLE TO CHANGE THEIR LIFE</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 footer-widget">
             <div class="pl-30">
-              <div class="title" style="color: #05f7c2">
+              <div class="title">
                 <h2>
-                  <span>"If the farmer is rich, then so is the nation."</span>
+                  <span style="text-align: right;">"CREATING A TRANSFORMATIONAL SHIFT BETWEEN ONE GENERATION AND THE NEXT."</span>
                 </h2>
-                <br />
-                <p><strong>- Amit Kalantri</strong></p>
+             
               </div>
             </div>
           </div>
