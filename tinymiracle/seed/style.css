@@ -706,11 +706,11 @@ display: inline-block;
 .header-info .info-box:last-child {
   padding-right: 0;
 }
-.header-info .info-box .icon-box,
+/* .header-info .info-box .icon-box,
 .header-info .info-box .text-box {
   display: table-cell;
   vertical-align: middle;
-}
+} */
 .header-info .info-box .icon-box {
   padding-right: 20px;
 }
