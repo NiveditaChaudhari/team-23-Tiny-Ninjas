@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tiny Miracles Foundation - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+    /* .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .header a.logo:hover {
+      background-color: black;
+    } */
+
+    /* .header a:hover {
+      background-color: rgb(86, 246, 11);
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+    .subnav {
+      float: left;
+      overflow: hidden;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .subnav .subnavbtn {
+      border: none;
+      outline: none;
+      color: white;
+
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .subnav-content {
+      display: none;
+      position: absolute;
+
+      background-color: black;
+      z-index: 1;
+    }
+
+    .subnav-content a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+
+    .subnav-content a:hover {
+      background-color: rgb(6, 240, 26);
+      color: black;
+    }
+
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+
+    .bulleted-list{
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    } */
+  </style>
+</head>
+<body>
+  <header>
+    
+    <img src="LOGOimages.png" alt="Logo">
+    
+    <h2>Admin Dashboard</h2>
+  </header>
+  <nav>
+    <!-- Navigation menu -->
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#demographics">Demographics</a></li>
+      <li><a href="#sociographics">Sociographics</a></li>
+      <li><a href="#attendance">Attendance</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="overview">
+      <!-- Overview section content -->
+      <h2>Overview</h2>
+      <div class="overview-item">
+        <h3>Total Sessions</h3>
+        <p id="total-sessions"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Total Attendees</h3>
+        <p id="total-attendees"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Average Attendance</h3>
+        <p id="average-attendance"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Demographic Overview</h3>
+        <p id="demographic-overview"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Sociographic Overview</h3>
+        <p id="sociographic-overview"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Impact Indicators</h3>
+        <p id="impact-indicators"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Goals Progress</h3>
+        <p id="goals-progress"></p>
+      </div>
+    </section>
+    <section id="demographics">
+      <h2>Demographics</h2>
+      <div class="chart-container">
+        <canvas id="demographics-chart" style="height: 300px;"></canvas>
+      </div>
+    </section>
+    
+    <section id="sociographics">
+      <h2>Sociographics</h2>
+      <div class="chart-container">
+        <canvas id="sociographics-chart" style="height: 300px;"></canvas>
+      </div>
+    </section>
+    
+    
+    
+    
+    <section id="attendance">
+      <h2>Attendance</h2>
+      
+      <canvas id="attendance-chart" style="height: 300px;"></canvas>
+    </section> 
+    
+  </main>
+  <footer>
+    <p>&copy; 2023 Tiny Miracles Foundation</p>
+  </footer>
+  <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

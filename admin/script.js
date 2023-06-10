@@ -1,9 +1,9 @@
 /* Simulated data for the overview section*/
 const overviewData = {
-    totalSessions: 10,
-    totalAttendees: 200,
-    averageAttendance: 20,
-    demographicOverview: "50% Male, 50% Female",
+    totalSessions:  10,
+    totalAttendees:  200,
+    averageAttendance:  20,
+    demographicOverview: "30% Male, 50% Female, 20% Others",
     sociographicOverview: "40% Students, 30% Professionals, 30% Others",
     impactIndicators: "Positive testimonials and feedback",
     goalsProgress: "80% achieved"
@@ -96,37 +96,78 @@ const sociographicsData = {
   ]
 };
 
-// Create the sociographics chart
-const sociographicsChart = new Chart(document.getElementById('sociographics-chart'), {
-  type: 'pie',
-  data: sociographicsData,
-  options: {
-    responsive: true,
-    maintainAspectRatio: false
-  }
-});
-
 // Function to update the sociographics chart
-function updateSociographicsChart(data) {
-  sociographicsChart.data = data;
-  sociographicsChart.update();
+function updateSociographicsChart() {
+  const sociographicsChartElement = document.getElementById('sociographics-chart');
+
+  new Chart(sociographicsChartElement, {
+    type: 'pie',
+    data: sociographicsData,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
 }
 
-// Example usage:
-const newData = {
-  labels: ['Students', 'Professionals', 'Others'],
+// When the page finishes loading, update the sociographics chart
+window.addEventListener('load', () => {
+  updateSociographicsChart();
+});
+
+// Simulated data for the attendance section
+const attendanceData = {
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','july','August','September','October','November','December'],
   datasets: [
     {
-      label: 'Sociographics',
-      data: [50, 20, 30],
-      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+      label: 'Attendance',
+      data: [80, 75, 85, 90, 95, 80,60,50,40,85,83,74],
+      backgroundColor: 'rgba(54, 162, 235, 0.5)',
+      borderColor: 'rgba(54, 162, 235, 1)',
+      borderWidth: 2,
+      fill: true,
     }
   ]
 };
 
-// Call the updateSociographicsChart function with the new data
+// Function to update the attendance chart
+function updateAttendanceChart() {
+  const attendanceChartElement = document.getElementById('attendance-chart');
+
+  new Chart(attendanceChartElement, {
+    type: 'line',
+    data: attendanceData,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 100,
+          title: {
+            display: true,
+            text: 'Attendance Percentage'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Month'
+          }
+        }
+      },
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+}
+
+// When the page finishes loading, update the attendance chart
 window.addEventListener('load', () => {
-  updateSocioagraphicsChart();
+  updateAttendanceChart();
 });
 
 
