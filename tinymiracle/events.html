@@ -29,7 +29,7 @@
     }
 
     .header a:hover {
-      background-color: rgb(86, 246, 11);
+      background-color: #05a477;
       color: black;
     }
 
@@ -76,7 +76,7 @@
     }
 
     .subnav-content a:hover {
-      background-color: rgb(6, 240, 26);
+      background-color: 05f7c2;
       color: black;
     }
 
@@ -89,7 +89,7 @@
       margin-right: 60px;
     }
     .boxx {
-      border: 4px solid #057727;
+      border: 4px solid #05a477;
       border-radius: 10px;
       padding-left: 20px;
       padding-right: 20px;
@@ -102,6 +102,72 @@
       margin-left: 100px;
       margin-right: 100px;
     }
+    .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+    .fa:hover {
+    opacity: 0.7;
+    text-align: center;
+    }
+
+    .fa-instagram {
+    background: #3B5998;
+    color: white;
+    /* margin-left: 50%; */
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+    margin-left: 45%;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    /* margin-left: 40%; */
+    }
+
+    /* .re-buttom a:link, a:visited{
+      background-color: #05a477;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .re-buttom a:hover, a:active{
+      background-color: #05a477;
+    } */
+    .styled {
+    border: 0;
+    line-height: 2;
+    padding: 10px 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.792), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
   </style>
 
   <head>
@@ -159,59 +225,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="seed/style.css" />
   </head>
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid white;
-      border-collapse: collapse;
-      padding: 10px;
-    }
-    th,
-    td {
-      background-color: #96d4d4;
-    }
-    header {
-      display: block;
-    }
-    p {
-      text-align: left;
-    }
-    #ourParagraph {
-      border-style: solid;
-      padding: 30px;
-    }
-    p {
-      text-align: justify-all;
-    }
-    #ourParagraph {
-      border-style: solid;
-      padding: 30px;
-    }
-    .blink {
-  animation: blink 3s infinite;
-  color:red;
-  font-size: medium;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0.5;
-  }
-  60% {
-    opacity: 0;
-    transform: scale(2);
-  }
-  41% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 2;
-  }
-}
-  </style>
+  
   <body>
     <header>
       <div class="header">
@@ -224,7 +238,13 @@
           <!-- <div class="subnav"></div> -->
           <a href="index.html">Home</a>
           <a href="events.html">Our Events</a>
-          <!-- <a href="seed.html">Information</a> -->
+          <div class="subnav">
+            <button class="subnavbtn">Registered Events<i class="#"></i></button>
+            <div class="subnav-content">
+              <li><a href="past_event.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Past Events&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+              <li><a href="upcoming_event.html">Upcoming Events</a></li>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -244,28 +264,31 @@
 
 <div class="boxx">
 <br>
-<h3>1. Social Awareness</h3>
+<h3><strong>1. Social Awareness Camp</strong></h3>
 <br>
 <p>Session is for updating you all about the Aadhar card and Pan card linking published by the Government of India.
-  <p>
-    <span class="blink"><strong><strong>Date : 4th to 6th July</strong> </strong></span> 
+  <br><br>
+    <span style="margin-left: 10px; font-size: medium;"><strong>Date : 04th and 06th July </strong></span> 
   </p>
-</p>
-<a style="text-align: center; display: block;" href="https://forms.gle/BahMZcUv5R2RFtGq8">Registration form </a>
-
-
-<br><br></div><br>
+&nbsp;
+<input class="favorite styled"
+  type="button" onClick="location.href='eventform.html'"
+  value="Registration Form">
+<br><br><br></div><br>
 
 <div class="boxx">
 <br>
-<h3> 2. Free Health Checkup</h3>
+<h3><strong>2. Free Health Checkup</strong> </h3>
 <br>
 <p>Medical camps provide free medical advice, medicine to the unfortunate people and refer for specialized treatment or surgery whenever it is required.
 <br><br><p>
-  <span class="blink"><strong><strong>Date : 15th and 16th July</strong> </strong></span> 
-</p></p>
+  <span style="margin-left: 10px;"><strong><strong>Date : 15th and 16th July </strong> &nbsp;<a href="eventform.html" style="background-color: rgb(16, 21, 27); padding: 0px 10px;"><input class="favorite styled"
+type="button"
+value="Registration Form"></a></strong></span> </p>
+</p>
 
-<a style="text-align: center; display: block;" href="https://forms.gle/BahMZcUv5R2RFtGq8">Registration form </a>
+
+
 
 
 <br><br></div>
@@ -290,7 +313,7 @@
 
 <div class="boxx">
 <br>
-<h3>1. Social Awareness</h3>
+<h3><strong>1. Social Awareness</strong></h3>
 <br>
 <p>When life in poverty is all you know, every day tends to be a struggle, and priorities are more commonly organized based on survival. To overcome this and give people the support they need, we cover over 150 topics during awareness sessions, ranging from financial literacy and the confidence to speak up about domestic abuse to hygiene and human rights. 
 
@@ -300,28 +323,28 @@ An empowered mindset is a capable mindset, and that shift is what we rally behin
 <br><br>
 <div class="boxx">
 <br>
-<h3>2. Healthcare</h3><br>
+<h3><strong>2. Healthcare</strong></h3><br>
 <p>It’s true what they say: health is wealth. When people are sick or malnourished, change is less inspiring and more daunting. That’s why we work on the ground to improve the community’s health through weekly doctor visits, dentist visits, blood tests, supplementary nutrition, organized exercise programs, and addiction counseling..</p>
 
 </div>
 <br><br>
 <div class="boxx">
 <br>
-<h3>3. Education</h3><br>
+<h3><strong>3. Education</strong></h3><br>
 <p>Knowledge is power, and power is potential. So, we prioritise education by testing and placing children in suitable programs, offering classes to the illiterate parent population, teaching English, and providing computer access and computer classes. High school graduates can even get a university loan from us.</p>
 
 </div>
 <br>
 <br><br>
 <div class="boxx"><br>
-<h3>4. Skill Training</h3><br>
+<h3><strong>4. Skill Training</strong></h3><br>
 <p>Getting out of poverty takes time and money. That’s why we work to give illiterate, unskilled community members the chance to earn an income and open a bank account. We start by teaching sewing, folding, product manufacturing, and the basics of quality control. We make sure that these skills are useful and relevant for future endeavors. Earning money gives them the opportunity to make their own choices.</p>
 </div>
 
 <br>
 <br><br>
 <div class="boxx"><br>
-<h3>5. Celebration</h3><br>
+<h3><strong>5. Celebration</strong></h3><br>
 <p>Getting out of poverty takes time and money. That’s why we work to give illiterate, unskilled community members the chance to earn an income and open a bank account. We start by teaching sewing, folding, product manufacturing, and the basics of quality control. We make sure that these skills are useful and relevant for future endeavors. Earning money gives them the opportunity to make their own choices.</p>
 
 </div>
@@ -364,13 +387,18 @@ An empowered mindset is a capable mindset, and that shift is what we rally behin
               src="images/footer-logo.png"
               alt="logo"
           /></a>
-          <p style="margin: left 10px";>EMPOWERING PEOPLE TO CHANGE THEIR LIFE</p>
+          <p style="margin-left: 30px";>EMPOWERING PEOPLE TO CHANGE THEIR LIFE</p>
         </div>
       </div>
-        <span style="margin-right: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">CREATING A TRANSFORMATIONAL SHIFT BETWEEN ONE GENERATION AND THE NEXT."</span></div>
-      </div>
-      <p style="text-align: center;">&copy; Team 23 - 'Tiny Miracles Foundation'</p>
+        <span style="margin-right: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">"CREATING A TRANSFORMATIONAL SHIFT BETWEEN ONE GENERATION AND THE NEXT."</span>
     </div>
+  </div>
+  <br><br>
+  <div class="social-links">
+      <a href="" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+    <!-- <a href="https://www.facebook.com/elitesocio" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+    <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
   </div>
 </footer>
 <!-- jQuery js -->

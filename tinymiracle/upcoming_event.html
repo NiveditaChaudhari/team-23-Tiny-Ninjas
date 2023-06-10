@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style type="text/css">
+    .header {
+      overflow: hidden;
+      background-color: #10151b;
+      padding: 10px 30px;
+    }
+
+    .header a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .header a.logo:hover {
+      background-color: black;
+    }
+
+    .header a:hover {
+      background-color: #05a477;
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+    .subnav {
+      float: left;
+      overflow: hidden;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .subnav .subnavbtn {
+      border: none;
+      outline: none;
+      color: white;
+
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .subnav-content {
+      display: none;
+      position: absolute;
+
+      background-color: black;
+      z-index: 1;
+    }
+
+    .subnav-content a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+
+    .subnav-content a:hover {
+      background-color: 05f7c2;
+      color: black;
+    }
+
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+
+    .boxx {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .boxx {
+      border: 4px solid #05a477;
+      border-radius: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      background-color: #c0c0c0;
+    }
+    .entire {
+      padding: 0px;
+      border: 0px solid black;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+    .fa:hover {
+    opacity: 0.7;
+    text-align: center;
+    }
+
+    .fa-instagram {
+    background: #3B5998;
+    color: white;
+    /* margin-left: 50%; */
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+    margin-left: 45%;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    /* margin-left: 40%; */
+    }
+
+    /* .re-buttom a:link, a:visited{
+      background-color: #05a477;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .re-buttom a:hover, a:active{
+      background-color: #05a477;
+    } */
+    .styled {
+    border: 0;
+    line-height: 2;
+    padding: 10px 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.792), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+  </style>
+
+
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <title>tinymiraclesfoundation</title>
+    <!-- viewport meta -->
+    <meta name="Agrolove" content="All You Need for Agronomy" />
+
+    <!-- styles -->
+    <!-- helpers -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- fontawesome css -->
+    <link
+      rel="stylesheet"
+      href="plugins/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- strock gap icons -->
+    <link rel="stylesheet" href="plugins/Stroke-Gap-Icons-Webfont/style.css" />
+    <!-- revolution slider css -->
+    <link rel="stylesheet" href="plugins/revolution/css/settings.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/layers.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/navigation.css" />
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="plugins/flaticon/flaticon.css" />
+    <!-- jQuery ui css -->
+    <link href="plugins/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="plugins/owl.carousel-2/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/owl.carousel-2/assets/owl.theme.default.min.css"
+    />
+    <!-- animate css -->
+    <link rel="stylesheet" href="plugins/animate.min.css" />
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="plugins/fancyapps-fancyBox/source/jquery.fancybox.css"
+    />
+    <link
+      rel="icon"
+      href="images/LOGOimage.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="seed/style.css" />
+
+  </head>
+  <body>
+    <!-- Start mainmenu -->
+    <header>
+      <div class="header">
+        <a href="index.html" class="logo"
+          ><img style="height: 80px" src="images/footer-logo.png" alt="logo"
+        /></a>
+        <br />
+        <div class="header-right">
+          <!-- <a href="http://localhost:8000/">Crop Predictor</a> -->
+          <!-- <div class="subnav"></div> -->
+          <a href="index.html">Home</a>
+          <a href="events.html">Our Events</a>
+          <div class="subnav">
+            <button class="subnavbtn">Registered Events<i class="#"></i></button>
+            <div class="subnav-content">
+              <li><a href="past_event.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Past Events&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+              <li><a href="upcoming_event.html">Upcoming Events</a></li>
+            </div>
+          </div>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </div>
+    </header>
+    <!-- End mainmenu -->
+    <h2>Upcoming Events</h2>
+    <br></br>
+    
+    <div class="boxx">
+      <br>
+      <h3><strong>Social Awareness Camp</strong> </h3>
+      <br>
+
+      <span style="margin-left: 10px;"><strong><strong>Date : 04th and 06th July </strong> &nbsp;<a href="eventform.html" style="background-color: rgb(16, 21, 27); padding: 0px 10px;"><input class="favorite styled"
+      type="button"
+      value="Feedback Form"></a></strong></span> </p>
+      </p></div>  <br><br>
+      <div class="boxx">
+        <br>
+        <h3><strong>Free Health Checkup</strong> </h3>
+        <br>
+    
+          <span style="margin-left: 10px;"><strong><strong>Date : 15th and 16th July </strong> &nbsp;<a href="eventform.html" style="background-color: rgb(16, 21, 27); padding: 0px 10px;"><input class="favorite styled"
+        type="button"
+        value="Feedback Form"></a></strong></span> </p>
+        </p></div>
+    <br><br>
+      <br><!--<br>
+<div class="boxx">
+  <br>
+  <h3><strong>2. Free Health Checkup</strong> </h3>
+  <br>
+
+     <span style="margin-left: 10px;"><strong><strong>Date : 15th and 16th July </strong> &nbsp;<a href="eventform.html" style="background-color: rgb(16, 21, 27); padding: 0px 10px;"><input class="favorite styled"
+  type="button"
+  value="Registration Form"></a></strong></span> </p>
+  </p></div> -->
+<br><br>
+
+    <script type="text/javascript">
+        (function () {
+          var options = {
+            whatsapp: " +91 9325849720", // WhatsApp number
+            call: " +91 9325849720", // Call phone number
+            call_color: "#129BF4", // Call button color
+            call_to_action: "Message us", // Call to action
+            button_color: "#E74339", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,call", // Order of buttons
+          };
+          var proto = document.location.protocol,
+            host = "getbutton.io",
+            url = proto + "//static." + host;
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = url + "/widget-send-button/js/init.js";
+          s.onload = function () {
+            WhWidgetSendButton.init(host, proto, options);
+          };
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+    </section>
+
+    <footer id="footer" class="sec-padding">
+      <div class="thm-container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 footer-widget">
+            <div class="about-widget">
+              <a href="index.html"
+                ><img
+                  style="height: 100px"
+                  src="images/footer-logo.png"
+                  alt="logo"
+              /></a>
+              <p style="margin-left: 30px";>EMPOWERING PEOPLE TO CHANGE THEIR LIFE</p>
+            </div>
+          </div>
+            <span style="margin-right: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">"CREATING A TRANSFORMATIONAL SHIFT BETWEEN ONE GENERATION AND THE NEXT."</span>
+        </div>
+      </div>
+      <br><br>
+      <div class="social-links">
+          <a href="" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+        <!-- <a href="https://www.facebook.com/elitesocio" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+        <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <!-- jQuery js -->
+    <script src="plugins/jquery/jquery-1.11.3.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery ui js -->
+    <script src="plugins/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <!-- owl carousel js -->
+    <script src="plugins/owl.carousel-2/owl.carousel.min.js"></script>
+    <!-- jQuery appear -->
+    <script src="plugins/jquery-appear/jquery.appear.js"></script>
+    <!-- jQuery countTo -->
+    <script src="plugins/jquery-countTo/jquery.countTo.js"></script>
+    <!-- jQuery validation -->
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- gmap.js helper -->
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <!-- gmap.js -->
+    <script src="plugins/gmap.js"></script>
+    <!-- mixit up -->
+    <script src="plugins/jquery.mixitup.min.js"></script>
+
+    <!-- revolution slider js -->
+    <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- fancy box -->
+    <script src="plugins/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+    <!-- type script -->
+    <script src="plugins/typed.js-master/dist/typed.min.js"></script>
+
+    <!-- theme custom js  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
