@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tiny Miracles Foundation - Admin Dashboard</title>
+  <style type="text/css">
+    .header {
+      overflow: hidden;
+      background-color: #10151b;
+      padding: 10px 30px;
+    }
+
+    .header a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .header a.logo:hover {
+      background-color: black;
+    }
+
+    .header a:hover {
+      background-color: rgb(86, 246, 11);
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+    .subnav {
+      float: left;
+      overflow: hidden;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .subnav .subnavbtn {
+      border: none;
+      outline: none;
+      color: white;
+
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .subnav-content {
+      display: none;
+      position: absolute;
+
+      background-color: black;
+      z-index: 1;
+    }
+
+    .subnav-content a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+
+    .subnav-content a:hover {
+      background-color: rgb(6, 240, 26);
+      color: black;
+    }
+
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+
+    .boxx {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .boxx {
+      border: 4px solid #057727;
+      border-radius: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      background-color: #c0c0c0;
+    }
+    .entire {
+      padding: 0px;
+      border: 0px solid black;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  </style>
+
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <title>tinymiraclesfoundation</title>
+    <!-- viewport meta -->
+    <meta name="Agrolove" content="All You Need for Agronomy" />
+
+    <!-- styles -->
+    <!-- helpers -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- fontawesome css -->
+    <link
+      rel="stylesheet"
+      href="plugins/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- strock gap icons -->
+    <link rel="stylesheet" href="plugins/Stroke-Gap-Icons-Webfont/style.css" />
+    <!-- revolution slider css -->
+    <link rel="stylesheet" href="plugins/revolution/css/settings.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/layers.css" />
+    <link rel="stylesheet" href="plugins/revolution/css/navigation.css" />
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="plugins/flaticon/flaticon.css" />
+    <!-- jQuery ui css -->
+    <link href="plugins/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" />
+    <!-- owl carousel css -->
+    <link
+      rel="stylesheet"
+      href="plugins/owl.carousel-2/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/owl.carousel-2/assets/owl.theme.default.min.css"
+    />
+    <!-- animate css -->
+    <link rel="stylesheet" href="plugins/animate.min.css" />
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="plugins/fancyapps-fancyBox/source/jquery.fancybox.css"
+    />
+    <link
+      rel="icon"6
+      href="images/LOGOimage.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="style.css"> </style>
+  </head>
+
+<body>
+  <!-- <header>
+    <h1>Admin Dashboard</h1>
+  </header> -->
+  <!-- <nav>
+     Navigation menu 
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#demographics">Demographics</a></li>
+      <li><a href="#sociographics">Sociographics</a></li>
+      <li><a href="#attendance">Attendance</a></li>
+    </ul>
+  </nav> -->
+  <header>
+    <div class="header">
+      <a href="#default" class="logo"
+        ><img style="height: 80px" src="images/footer-logo.png" alt="logo"
+      /></a>
+      <br />
+      <div class="header-right">
+        <a href="#">Home</a>
+        <a href="#">Chart</a>
+        <!-- <a href="#">Information</a> -->
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="overview">
+      <!-- Overview section content -->
+      <h2>Overview</h2>
+      <div class="overview-item">
+        <h3>Total Sessions</h3>
+        <p id="total-sessions"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Total Attendees</h3>
+        <p id="total-attendees"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Average Attendance</h3>
+        <p id="average-attendance"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Demographic Overview</h3>
+        <p id="demographic-overview"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Sociographic Overview</h3>
+        <p id="sociographic-overview"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Impact Indicators</h3>
+        <p id="impact-indicators"></p>
+      </div>
+      <div class="overview-item">
+        <h3>Goals Progress</h3>
+        <p id="goals-progress"></p>
+      </div>
+    </section>
+    
+    <section id="demographics">
+      <!-- Demographics section content -->
+      <h2>Demographics</h2>
+      <div class="demographics-chart"></div>
+      <canvas id="demographics-chart" style="height: 300px;"></canvas>
+    </div>
+    </section>
+    
+    <section id="sociographics">
+      <!-- Sociographics section content -->
+      <h2>Sociographics</h2>
+      <div class="sociographics-chart">
+        <canvas id="sociographics-chart" style="height: 300px;"></canvas>
+      </div>
+    </section>
+    
+    <section id="attendance">
+      <!-- Attendance section content -->
+      <h2>Attendance</h2>
+      <!-- Display attendance trends and charts here -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Team 23 - 'Tiny Miracles Foundation'</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
