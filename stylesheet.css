@@ -115,13 +115,13 @@ body {
   background: #76b852;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #2F4F4F
-, #8DC26F);
+, #000000);
   background: -moz-linear-gradient(to top, #2F4F4F
-, #C0C0C0);
+, #000000);
   background: -o-linear-gradient(to top,#2F4F4F
-,#C0C0C0);
+,#000000);
   background: linear-gradient(to top, #2F4F4F
-,#C0C0C0);
+,#000000);
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
@@ -130,7 +130,7 @@ body {
 h1 {
   font-size: 3em;
   text-align: center;
-  color: #fff;
+  color: #8DC26F;
   font-weight: 100;
   text-transform: capitalize;
   letter-spacing: 4px;
