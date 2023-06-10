@@ -188,6 +188,29 @@
       border-style: solid;
       padding: 30px;
     }
+    .blink {
+  animation: blink 3s infinite;
+  color:red;
+  font-size: medium;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  41% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 2;
+  }
+}
   </style>
   <body>
     <header>
@@ -200,21 +223,52 @@
           <!-- <a href="http://localhost:8000/">Crop Predictor</a> -->
           <!-- <div class="subnav"></div> -->
           <a href="index.html">Home</a>
-          <a href="govts.html">Our Events</a>
-          <a href="seed.html">Information</a>
+          <a href="events.html">Our Events</a>
+          <!-- <a href="seed.html">Information</a> -->
         </div>
       </div>
     </header>
 
-
     
+    
+    <div class="header">
 
     
 <div class="top" data-aos="fade-up" >
-<img src="images/i1.png" alt="seeds" height=700px width=1450px>
+<img src="images/i1.png" alt="seeds" height=600px width=1450px>
+<br><br>
+
+</div>
+<h2>Upcoming Events</h2>
+<br></br>
+
+<div class="boxx">
+<br>
+<h3>1. Social Awareness</h3>
+<br>
+<p>Session is for updating you all about the Aadhar card and Pan card linking published by the Government of India.
+  <p>
+    <span class="blink"><strong><strong>Date : 4th to 6th July</strong> </strong></span> 
+  </p>
+</p>
+<a style="text-align: center; display: block;" href="https://forms.gle/BahMZcUv5R2RFtGq8">Registration form </a>
 
 
+<br><br></div><br>
 
+<div class="boxx">
+<br>
+<h3> 2. Free Health Checkup</h3>
+<br>
+<p>Medical camps provide free medical advice, medicine to the unfortunate people and refer for specialized treatment or surgery whenever it is required.
+<br><br><p>
+  <span class="blink"><strong><strong>Date : 15th and 16th July</strong> </strong></span> 
+</p></p>
+
+<a style="text-align: center; display: block;" href="https://forms.gle/BahMZcUv5R2RFtGq8">Registration form </a>
+
+
+<br><br></div>
 
 </div>
 <!-- <div class="centered"><h1 style="color:white";>Seed Prices Information</h1> </div> -->
@@ -228,7 +282,6 @@
 <br></br>
 
 
-<div class="header">
 
 <h2>Our 5 Pillars</h2>
 
@@ -314,12 +367,9 @@ An empowered mindset is a capable mindset, and that shift is what we rally behin
           <p style="margin: left 10px";>EMPOWERING PEOPLE TO CHANGE THEIR LIFE</p>
         </div>
       </div>
-        <span style="margin-right: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">CREATING A TRANSFORMATIONAL SHIFT BETWEEN ONE GENERATION AND THE NEXT."</span>
-      
-          
-        
-      
-      <div class="col-md-4 col-sm-6 footer-widget"></div>
+        <span style="margin-right: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">CREATING A TRANSFORMATIONAL SHIFT BETWEEN ONE GENERATION AND THE NEXT."</span></div>
+      </div>
+      <p style="text-align: center;">&copy; Team 23 - 'Tiny Miracles Foundation'</p>
     </div>
   </div>
 </footer>
