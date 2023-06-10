@@ -1,159 +1,86 @@
+<!--
+Author: Colorlib
+Author URL: https://colorlib.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>Responsive Registaration Form</title>
-        <link rel="stylesheet" href="./stylesheet.css">
-        <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
-    </head>
-       
-    <body>
-        <h1>Event Registaration Form</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-10">
-                    <label for="fname">First Name:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="lname">Last Name:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="email">Email:</label>
-                </div>
-                <div class="col-90">
-                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="mobile">Mobile:</label>
-                </div>
-                <div class="col-90">
-                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="gender" required>Gender:</label>
-                </div>
-                <div class="col-90">
-                    <input type="radio" id="male" name="gender" value="male"/>Male
+<html>
+<head>
+<title>Creative Colorlib SignUp Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Event Registaration Form</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="#" method="post">
+					<input class="text" type="text" name="Username" placeholder="First Name" required=""><br>
+					<input class="text" type="text" name="Username" placeholder="Last Name" required="">
+					<input class="text email" type="email" name="email" placeholder="Email" required="">
+					<input class="text" type="text" name="Username" placeholder="Mobile Number" required=""><br>
+
+					 
+                    <label  for="gender" required>Gender:</label>
+            
+                
+                    <input class="text" type="radio" id="male" name="gender" value="male"/>Male
                     <input type="radio" id="female" name="gender" value="female"/>Female
                    <input type="radio" id="female" name="gender" value="Others"/>Others
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="dob">Date Of Birth:</label>
-                </div>
-                <div class="col-90">
+                   <br>
+                
+					<br> <label for="dob">Date Of Birth:</label>
                     <input type="Date" id="dob" name="dob">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="address">Address:</label>
-                </div>
-                <div class="col-90">
-                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="city">City:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="city" name="city" maxlength="10">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="pincode">Area PIN:</label>
-                </div>
-                <div class="col-90">
-                    <input type="number" id="pin" name="pin" maxlength="6">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="state">State:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="state" name="state">
-                </div>
-            </div> 
-          <div class="row">
-                <div class="col-10">
-                    <label for="state">Occupation:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="occupation" name="occupation">
-                </div>
-            </div> 
-          <div class="row">
-                <div class="col-10">
-                    <label for="mobile">Aadhaar Number.:</label>
-                </div>
-                <div class="col-90">
-                    <input type="tel" id="Aadhaar" name="Aadhaar" placeholder="only 12 digits are allowed">
-                </div>
-            </div> 
-          <div class="row">
-                <div class="col-10">
-                    <label for="mobile">PAN Number</label>
-                </div>
-                <div class="col-90">
-                    <input type="tel" id="Pan" name="Pan" placeholder="">
-                </div>
-            </div>
-            <!---<div class="row">
-                <div class="col-10">
-                    <label for="qualification" required >Qualification:</label>
-                </div>
-                <div class="col-90">
-                    <select name="qualification" id="qualification">
-                        <option value=" ">Select Qualification:</option>
-                      <option value="Post Graduation">10th</option>
-                        <option value="Graduation">Graduation</option>
-                      <option value="12th">12th</option>
-                      <option value="10th">10th</option>
-                        
-                        <option 
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="specialization">Specialization:</label>
-                </div>
-                <div class="col-90">
-                    <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Computer Science">Computer Science<br/>
-                    <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Information Technology">Information Technology<br/>
-                    <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Computer Architecture">Computer Architecture<br/>
-                    <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Tele Communication">Tele Communication<br/>
-                </div>
-            </div> --->
-            <div class="row">
-                <div class="col-10">
-                    <label for="password">Password:</label>
-                </div>
-                <div class="col-90">
-                    <input type="password" id="password" name="password" maxlength="8">
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit" onclick="SaveStudentDetails()">
-            </div>  
-        </div>  
-    </body>
-</html>
+                    <br>
+                    <br><input class="text" type="text" name="address" id="address" placeholder="Address" required=""><br>
+					<input class="text" type="text" name="password" placeholder="State" required=""> <br>
+					<input class="text" type="text" name="password" placeholder="City" required=""><br>
+					<input class="text" type="text" name="Username" placeholder="Area Pin" required="">
+					<input class="text email" type="email" name="email" placeholder="Occupation" required="">
+					<input class="text" type="text" name="password" placeholder="Aadhaar Number" required=""><br>
+					<input class="text" type="text" name="password" placeholder="PAN Number" required=""><br>
+					<input class="text" type="password" name="password" placeholder="Password" required="">
+					<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="SUBMIT">
+				</form>
+			
+			</div>
+		</div>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			<p>© Form created by Tiny Miracles Foundation <a href="https://tinymiraclesfoundation.org/" target="_blank"></a></p>
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>      
