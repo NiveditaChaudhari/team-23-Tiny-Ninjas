@@ -473,8 +473,8 @@ li {
   background: #13314c url(../images/vi.jpeg) center center no-repeat;
   background-size: cover;
 }
-/*background-color: #0cafd2;*/
-/* } */
+/* background-color: #0cafd2;
+} */
 #header:after {
   content: "";
   position: absolute;
