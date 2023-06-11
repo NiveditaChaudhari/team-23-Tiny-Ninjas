@@ -1,40 +1,53 @@
+<!--
+Author: Colorlib
+Author URL: https://colorlib.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Creative Colorlib SignUp Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- Custom Theme files -->
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <!-- //web font -->
   </head>
   <body>
-    <main class="container">
-      <div class="row">
-        <section class="col-md-8 my-5 offset-md-2">
-          <h3 class="font-time text-primary text-center mb-3">
-            TINY MIRACLES EVENTS FEEDBACK FORM
-          </h3>
-          <h4 class="font-time text-center">
-            Please take few moments to complete this feedback
-          </h4>
-          <hr class="text-dark" />
-
-          <form action="" method="post">
-            <div class="form-group">
-              <label class="font-weight-bold"
-                >Have you participated in any event in GIT SHODH before?</label
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+      <h1>Feedback Form</h1><br>
+      <h3>  Please take few moments to complete this feedback</h3>
+      <div class="main-agileinfo">
+        <div class="agileits-top">
+          <form action="#" method="post"> 
+          <label class="font-weight-bold"
+                >Have you participated in any event of Tiny Miracles Foundatioin before?</label
               >
               <br />
               <input type="radio" name="attendBefore" value="yes" />
               <label>Yes</label> <br />
               <input type="radio" name="attendBefore" value="no" />
               <label>No</label>
-            </div>
-
-            <div class="form-group">
-              <label class="font-weight-bold"
+              <br>
+              <br>
+               <label class="font-weight-bold"
                 >How likely are you to attend one of our events in the
                 future?</label
               >
               <br />
+              
               <input type="radio" name="likelyAttend" value="1" />
               <label class="mr-5">1</label>
               <input type="radio" name="likelyAttend" value="2" />
@@ -44,11 +57,12 @@
               <input type="radio" name="likelyAttend" value="4" />
               <label class="mr-5">4</label>
               <input type="radio" name="likelyAttend" value="5" />
-              <label class="mr-5">5</label>
-            </div>
-
-            <div class="form-group">
-              <label class="font-weight-bold"
+              <label class="mr-5">5</label> 
+              <br>
+              <br>
+              
+              
+                <label class="font-weight-bold"
                 >How likely are you to recommend our events to a friend?</label
               >
               <br />
@@ -61,44 +75,48 @@
               <input type="radio" name="likelyRecommendFriend" value="4" />
               <label class="mr-5">4</label>
               <input type="radio" name="likelyRecommendFriend" value="5" />
-              <label class="mr-5">5</label>
-            </div>
-
-            <div class="form-group">
-              <label class="font-weight-bold"
+              <label class="mr-5">5</label> 
+              <br>
+              <br>
+              
+                            <label class="font-weight-bold"
                 >What did you like most about the event?</label
               >
-              <textarea
-                name="likeMost"
-                cols="30"
-                rows="3"
-                class="form-control"
-              ></textarea>
-            </div>
-
-            <div class="form-group">
-              <label class="font-weight-bold"
+            <input
+              class="text"
+              type="text"
+              name="Username"
+              placeholder=""
+              required=""
+            /><br />  
+            
+             <label class="font-weight-bold"
                 >What did you like least about the event?</label
               >
-              <textarea
-                name="likeLeast"
-                cols="30"
-                rows="3"
-                class="form-control"
-              ></textarea>
-            </div>
-
-            <label class="font-weight-bold">Overall Satisfaction</label>
+            
+            <input
+              class="text"
+              type="text"
+              name="Username"
+              placeholder=""
+              required=""
+            />  
+            <br>
+            <br>
+            
+             <label class="font-weight-bold">Overall Satisfaction <br>5:Very Satisfied <br>4:Satisfied <br>3:Neutral <br>2:Unsatisfied <br>1:Very Unsatisfied<br></label>
+              <br>
 
             <table class="table table-bordered">
               <thead class="text-center">
                 <tr>
                   <th>Parameter</th>
-                  <th>Very Satisfied</th>
-                  <th>Satisfied</th>
-                  <th>Neutral</th>
-                  <th>Unsatisfied</th>
-                  <th>Very Unsatisfied</th>
+                  <th>5 &nbsp &nbsp &nbsp &nbsp</th>
+                  <th>4 &nbsp &nbsp &nbsp &nbsp</th>
+                  <th>3 &nbsp &nbsp &nbsp &nbsp</th>
+                  <th>2 &nbsp &nbsp &nbsp &nbsp</th>
+                  <th>1 &nbsp &nbsp &nbsp &nbsp</th> 
+            
                 </tr>
               </thead>
 
@@ -234,29 +252,44 @@
                   </td>
                 </tr>
               </tbody>
-            </table>
-
-            <div class="form-group">
+            </table> 
+            <br>
               <label class="font-weight-bold"
                 >How can we improve this event?</label
               >
-              <textarea
-                name="suggestion"
-                cols="30"
-                rows="3"
-                class="form-control"
-              ></textarea>
-            </div>
-
             <input
-              type="submit"
-              name="submit"
-              class="btn text-center btn-primary btn-block rounded-pill"
-              value="Submit"
-            />
+              class="text"
+              type="text"
+              name="text"
+              placeholder=""
+              required=""
+            /> 
+            
+            <input type="submit" value="SUBMIT" />
           </form>
-        </section>
+        </div>
       </div>
-    </main>
+      <!-- copyright -->
+      <div class="colorlibcopy-agile">
+        <p>
+          © Form created by Tiny Miracles Foundation
+          <a href="https://tinymiraclesfoundation.org/" target="_blank"></a>
+        </p>
+      </div>
+      <!-- //copyright -->
+      <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- //main -->
   </body>
 </html>
