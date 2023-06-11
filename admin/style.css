@@ -9,7 +9,7 @@ header {
   text-align: center;
 }
 header img {
-  max-width: 150px; 
+  max-width: 150px;
   height: auto;
   margin-bottom: 0.3rem;
   display: flex;
@@ -19,9 +19,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('th.jpeg');
- background-repeat: no-repeat;
-  background-size: 75% auto; 
+  background-image: url("th.jpeg");
+  background-repeat: no-repeat;
+  background-size: 75% auto;
   background-size: cover;
   background-position: center;
 }
@@ -43,7 +43,7 @@ body, h1, h2, ul, li, p {
   }
   
   /* Global styles */
- /* body {
+/* body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
   }
@@ -84,8 +84,7 @@ body, h1, h2, ul, li, p {
     color: #fff;
   }
   /* CSS for the Overview section */
-  /* Global styles */
-
+/* Global styles */
 
 .container {
   max-width: 1200px;
@@ -220,78 +219,75 @@ section h2 {
 }
 
 .chart-container {
-  background-color: #fff; 
+  background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(21, 14, 14, 0.1); 
+  box-shadow: 0 2px 4px rgba(21, 14, 14, 0.1);
 }
 
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-  }*/
-  
-#overview {
-    background-color: #f5f5f5;
-    padding: 20px;
-  }
-  
-  #demographics {
-    float: left;
-    width: 50%;
-    padding: 0;
-    margin-bottom:  2rem;
-  }
-  
-  #sociographics {
-    float: right;
-    width: 50%;
-    padding: 0;
-    padding-bottom: 20px;
-    margin-bottom: 2rem;
-  }
-  
-  #demographics h2,
-  #sociographics h2 {
-    color: #333;
-    margin: 0 0 1rem;
-    padding: 20px;
-  }
-  
-  .chart-container {
-    height: 300px;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  section {
-    padding: 2rem 0;
-  }
-  
-  section h2 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  
- /* Demographics section styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+*/ #overview {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+#demographics {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+#sociographics {
+  float: right;
+  width: 50%;
+  padding: 0;
+  padding-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+#demographics h2,
+#sociographics h2 {
+  color: #333;
+  margin: 0 0 1rem;
+  padding: 20px;
+}
+
+.chart-container {
+  height: 300px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section {
+  padding: 2rem 0;
+}
+
+section h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Demographics section styles */
 /*#demographics {
     text-align: none;
   }
@@ -304,17 +300,15 @@ section h2 {
     max-width: 400px;
     margin: 0 auto;
     height: 70vh; /* Set a percentage-based height (adjust as needed) */
-   /* max-height: 400px;}*/
-     /* Set a maximum height for the chart container */
-  
-  
-  
-  /* Chart.js styles */
- /* canvas {
+/* max-height: 400px;}*/
+/* Set a maximum height for the chart container */
+
+/* Chart.js styles */
+/* canvas {
     display: block;
     max-width: 10%;
   }*/
-  /* CSS for the sociographics section */
+/* CSS for the sociographics section */
 /*#sociographics {
   text-align: none;
   }
@@ -327,37 +321,27 @@ section h2 {
     max-width: 400px;
     margin: 0 auto;
     height: 70vh; /* Set a percentage-based height (adjust as needed) */
-   /* max-height: 400px; 
+/* max-height: 400px; 
   }*/
-  
-  #attendance {
-    background-color: #e6e0e2; 
-    padding: 2rem;
-    margin-top: 2rem;
-  }
-  
-  
-  #attendance h2 {
-    font-size: 24px;
-    margin: 0 0 1rem;
-  }
-  
-  
-  #attendance-chart {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 1rem;
-    height: 70vh; /* Set a percentage-based height (adjust as needed) */
-    max-height: 400px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-  }
- 
-  
-  
 
+#attendance {
+  background-color: #e6e0e2;
+  padding: 2rem;
+  margin-top: 2rem;
+}
 
-  
-  
+#attendance h2 {
+  font-size: 24px;
+  margin: 0 0 1rem;
+}
+
+#attendance-chart {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1rem;
+  height: 70vh; /* Set a percentage-based height (adjust as needed) */
+  max-height: 400px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tiny Miracles Foundation - Admin Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-  <style type="text/css">
-    /* .header a.logo {
+  <head>
+    <title>Tiny Miracles Foundation - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css">
+      /* .header a.logo {
       font-size: 25px;
       font-weight: bold;
     }
@@ -12,7 +12,7 @@
       background-color: black;
     } */
 
-    /* .header a:hover {
+      /* .header a:hover {
       background-color: rgb(86, 246, 11);
       color: black;
     }
@@ -71,85 +71,80 @@
     .bulleted-list{
       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     } */
-  </style>
-</head>
-<body>
-  <header>
-    
-    <img src="LOGOimages.png" alt="Logo">
-    
-    <h2>Admin Dashboard</h2>
-  </header>
-  <nav>
-    <!-- Navigation menu -->
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#demographics">Demographics</a></li>
-      <li><a href="#sociographics">Sociographics</a></li>
-      <li><a href="#attendance">Attendance</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="overview">
-      <!-- Overview section content -->
-      <h2>Overview</h2>
-      <div class="overview-item">
-        <h3>Total Sessions</h3>
-        <p id="total-sessions"></p>
-      </div>
-      <div class="overview-item">
-        <h3>Total Attendees</h3>
-        <p id="total-attendees"></p>
-      </div>
-      <div class="overview-item">
-        <h3>Average Attendance</h3>
-        <p id="average-attendance"></p>
-      </div>
-      <div class="overview-item">
-        <h3>Demographic Overview</h3>
-        <p id="demographic-overview"></p>
-      </div>
-      <div class="overview-item">
-        <h3>Sociographic Overview</h3>
-        <p id="sociographic-overview"></p>
-      </div>
-      <div class="overview-item">
-        <h3>Impact Indicators</h3>
-        <p id="impact-indicators"></p>
-      </div>
-      <div class="overview-item">
-        <h3>Goals Progress</h3>
-        <p id="goals-progress"></p>
-      </div>
-    </section>
-    <section id="demographics">
-      <h2>Demographics</h2>
-      <div class="chart-container">
-        <canvas id="demographics-chart" style="height: 300px;"></canvas>
-      </div>
-    </section>
-    
-    <section id="sociographics">
-      <h2>Sociographics</h2>
-      <div class="chart-container">
-        <canvas id="sociographics-chart" style="height: 300px;"></canvas>
-      </div>
-    </section>
-    
-    
-    
-    
-    <section id="attendance">
-      <h2>Attendance</h2>
-      
-      <canvas id="attendance-chart" style="height: 300px;"></canvas>
-    </section> 
-    
-  </main>
-  <footer>
-    <p>&copy; 2023 Tiny Miracles Foundation</p>
-  </footer>
-  <script src="script.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</body>
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="LOGOimages.png" alt="Logo" />
+
+      <h2>Admin Dashboard</h2>
+    </header>
+    <nav>
+      <!-- Navigation menu -->
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#demographics">Demographics</a></li>
+        <li><a href="#sociographics">Sociographics</a></li>
+        <li><a href="#attendance">Attendance</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="overview">
+        <!-- Overview section content -->
+        <h2>Overview</h2>
+        <div class="overview-item">
+          <h3>Total Sessions</h3>
+          <p id="total-sessions"></p>
+        </div>
+        <div class="overview-item">
+          <h3>Total Attendees</h3>
+          <p id="total-attendees"></p>
+        </div>
+        <div class="overview-item">
+          <h3>Average Attendance</h3>
+          <p id="average-attendance"></p>
+        </div>
+        <div class="overview-item">
+          <h3>Demographic Overview</h3>
+          <p id="demographic-overview"></p>
+        </div>
+        <div class="overview-item">
+          <h3>Sociographic Overview</h3>
+          <p id="sociographic-overview"></p>
+        </div>
+        <div class="overview-item">
+          <h3>Impact Indicators</h3>
+          <p id="impact-indicators"></p>
+        </div>
+        <div class="overview-item">
+          <h3>Goals Progress</h3>
+          <p id="goals-progress"></p>
+        </div>
+      </section>
+      <section id="demographics">
+        <h2>Demographics</h2>
+        <div class="chart-container">
+          <canvas id="demographics-chart" style="height: 300px"></canvas>
+        </div>
+      </section>
+
+      <section id="sociographics">
+        <h2>Sociographics</h2>
+        <div class="chart-container">
+          <canvas id="sociographics-chart" style="height: 300px"></canvas>
+        </div>
+      </section>
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+
+        <canvas id="attendance-chart" style="height: 300px"></canvas>
+      </section>
+    </main>
+    <!-- <footer>
+      <p>&copy; 2023 Tiny Miracles Foundation</p>
+    </footer> -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
 </html>
